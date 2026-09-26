@@ -52,3 +52,5 @@ SELECT cities.name FROM countries JOIN cities ON countries.capital = cities.id W
 
 
 -- We're counting on you, gumshoe. Find out where she's headed, send us the info, and we'll be sure to meet her at the gates with bells on.
+
+SELECT cities.name, cities.district, countries.name FROM cities JOIN countries ON cities.countrycode = countries.code WHERE cities.population = 91084;
